@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <div class="registration-container">
+    <form method="POST" class="form-register">
+      {{ form.hidden_tag() }}
+      <h1 class="h3 mb-3 font-weight-normal">
+        Please fill out the details to register
+      </h1>
+      <label for="email" class="sr-only">{{ form.email.label }}</label>
+      {{ form.email(class="form-control") }}
+      <label for="username" class="sr-only">{{ form.username.label }}</label>
+      {{ form.username(class="form-control") }}
+      <label for="password" class="sr-only">{{ form.password.label }}</label>
+      {{ form.password(class="form-control") }}
+      <label for="password-confirm" class="sr-only">{{ form.pass_confirm.label }}</label>
+      {{ form.pass_confirm(class="form-control") }}
+      {{ form.submit(class="btn btn-lg btn-primary btn-block") }}
+    </form>
+  </div>
+
+{% endblock %}
