@@ -1,0 +1,7 @@
+{
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "files.autoSave": "onWindowChange",
+  "python.linting.pylintEnabled": true,
+  "python.pythonPath": "c:\\Users\\ewz23\\Desktop\\dev\\FlaskPortfolio\\env\\Scripts\\python.exe"
+}
